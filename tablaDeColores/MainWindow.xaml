@@ -1,0 +1,55 @@
+﻿<Window x:Class="tablaDeColores.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:testWPF"
+        mc:Ignorable="d"
+        Title="Tabla de Colores" Height="200" Width="400">
+    <StackPanel>
+        <DockPanel Margin="10">
+            <Label VerticalAlignment="Center" FontWeight="Bold">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="100"/>
+                    </TransformGroup>
+                </Label.RenderTransform> R :
+            </Label>
+            <TextBox Width="100" TextAlignment="Center" Name="ColorRR"></TextBox>
+        </DockPanel>
+
+        <DockPanel Margin="10">
+            <Label VerticalAlignment="Center" FontWeight="Bold">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="100"/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+                G:
+            </Label>
+            <TextBox Width="100" TextAlignment="Center" Name="ColorGG"></TextBox>
+        </DockPanel>
+
+        <DockPanel Margin="10">
+            <Label VerticalAlignment="Center" FontWeight="Bold">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="100"/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+                B:
+            </Label>
+            <TextBox Width="100" TextAlignment="Center" Name="ColorBB"></TextBox>
+        </DockPanel>
+        <Button Content="Cambiar Backgraund" Width="150" Margin="121,0" Click="Button_Click" />
+    </StackPanel>
+</Window>
